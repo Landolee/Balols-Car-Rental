@@ -1,0 +1,68 @@
+*{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+#phonenum span{
+    font-size: 10px;
+}
+.logo img{
+    height: 150px;
+    width: 260px;
+    border-radius: 10px;
+}
+.navigation{
+    background-color: white;
+    font-size: 24px;
+}
+.collapse ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.collapse ul li:hover{
+    background-color: rgb(28,196,224);
+    border-radius: 10px;
+}
+.home li a{
+    color: rgb(28,196,224);
+}
+.our-fleet ul li{
+    padding: 0px;
+}
+.our-fleet ul li a:hover{
+    background-color: rgb(28,196,224);
+}
+.our-services ul li{
+    padding: 0px;
+}
+.our-services ul li a:hover{
+    background-color: rgb(28,196,224);
+}
+.promo-offers ul li{
+    padding: 0px;
+}
+.promo-offers ul li a:hover{
+    background-color: rgb(28,196,224);
+}
+video{
+    height: 100%;
+    width: 90%;
+}
+.balols{
+    padding: 80px 200px 0px 200px;
+    position: absolute;
+    color: white;
+}
+.balols h1{
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+.balols p{
+    font-size: 20px;
+}
+.balols button:hover{
+    background-color: aliceblue;
+}
+.info{
+    background-color: rgb(28,196,224);
+}
