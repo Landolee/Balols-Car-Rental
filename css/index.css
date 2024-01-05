@@ -83,3 +83,21 @@ video{
     height: 100%;
     width: 100%;
 }
+.featured .card ul li{
+    list-style-type: circle;
+}
+.fb-page .card{
+    background-image: url(bin/backgorund.jpg);
+}
+.fb-page .card img{
+    height: 100%;
+    width: 100%;
+}
+.whatfor .card{
+    box-shadow: 0px 0px 5px 5px lightgray;
+    height: 100%;
+}
+.whatfor .card img{
+    height: 100%;
+    width: 100%;
+}
