@@ -140,7 +140,6 @@ video{
 }
 .footer-2{
     background-color: black;
-    color: white;
     height: 100%;
     padding: 10px;
 }
@@ -155,6 +154,6 @@ video{
     background-color: transparent;
     border-radius: 10px;
 }
-.footer-2 .footer-logo a{
-    text-decoration: none;
+.footer-2 ul li{
+    list-style: none;
 }
