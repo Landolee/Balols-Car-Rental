@@ -157,3 +157,16 @@ video{
 .footer-2 ul li{
     list-style: none;
 }
+
+@media only screen and (max-width: 1024px){
+    .balols{
+        margin: 80px 180px 0px 180px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .balols{
+        display: none;
+    }
+}
