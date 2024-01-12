@@ -44,79 +44,10 @@
 .promo-offers ul li a:hover{
     background-color: rgb(28,196,224);
 }
-video{
-    height: 100%;
-    width: 90%;
-}
-.balols{
-    margin: 150px 200px 0px 200px;
-    padding-bottom: 10px;
-    background-color: rgba(211, 211, 211, 0.244);
-    border-radius: 10px;
-    position: absolute;
-    color: white;
-}
-.balols h1{
-    font-size: 100px;
-    letter-spacing: 20px;
-}
-.balols p{
-    font-size: 20px;
-}
-.extras{
-    background-color: rgb(28,196,224);
-    padding: 10px;
-}
-.extras .card{
-    padding: 5px;
-    background-color: transparent;
-    border: 0px;
-}
-.extras .card p{
-    font-size: 14px;
-}
-.featured .card{
-    box-shadow: 0px 0px 5px 5px lightgray;
-    height: 100%;
-}
-.featured .card img{
-    height: 100%;
-    width: 100%;
-}
-.featured .card ul li{
-    list-style-type: circle;
-}
-.fb-page .card{
-    background-image: url(bin/backgorund.jpg);
-}
-.fb-page .card img{
-    height: 100%;
-    width: 100%;
-}
-.whatfor .card{
-    box-shadow: 0px 0px 5px 5px lightgray;
-    height: 100%;
-}
-.whatfor .card img{
-    height: 100%;
-    width: 100%;
-}
-.why-balols .card{
-    box-shadow: 0px 0px 5px 5px lightgray;
-    height: 100%;
-}
-.why-balols .card img{
-    height: 100%;
-    width: 100%;
-}
-.faq button{
-    width: 70%;
-    font-size: 18px;
-}
-.faq .faqtext{
-    width: 70%;
-    font-size: 14px;
-}
+
+
+
+
 .footer{
     height: 100%;
 }
@@ -153,17 +84,4 @@ video{
 }
 .footer-2 ul li{
     list-style: none;
-}
-
-@media only screen and (max-width: 1024px){
-    .balols{
-        margin: 80px 180px 0px 180px;
-    }
-}
-
-
-@media only screen and (max-width: 768px){
-    .balols{
-        display: none;
-    }
 }
