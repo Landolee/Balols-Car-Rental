@@ -44,7 +44,7 @@
                         <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
                     </svg>
                 </a>
-                <a href="login.html" class="btn">
+                <a href="login.html" class="btn" data-bs-toggle="modal" data-bs-target="#loginmodal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
                         <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
@@ -631,6 +631,7 @@
         <!--end faq-->
     </div>
     <!--end main body-->
+
     <!--footer-->
     <div class="container-fluid footer mt-5">
         <div class="row text-center footer-1">
@@ -703,8 +704,42 @@
         </div>
     </div>
     <!--end footer-->
-    <!--modal login-->
 
+    <!--modal login-->
+        <div class="modal fade" id="loginmodal" tabindex="1" aria-labelledby="loginLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <center><img src="bin/logo.png" alt="this is a photo" style="width: 100px; height: 100px; border-radius: 10px;"></center>
+                        <div class="row mt-5">
+                            <div class="col-sm mx-5">
+                                <center><h4>Login</h4></center>
+                                <form action="" method="get" class="needs-validation">
+                                    <div class="emailadd">
+                                        <input type="email" name="email" id="email" placeholder="@Email" class="form-control" required>
+                                        <div class="invalid-tooltip">
+                                            invalid email
+                                        </div>
+                                    </div>
+                                    <div class="password mt-3">
+                                        <input type="password" name="pass" id="pass" placeholder="Password" class="form-control" required>
+                                        <div class="invalid-tooltip">
+                                            invalid password
+                                        </div>
+                                    </div>
+                                    <div class="sumbitbtn mt-3">
+                                        <center><button type="submit" class="btn btn-success">Login</button></center>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!--end modal login-->
 </body>
 </html>
