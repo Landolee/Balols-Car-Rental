@@ -1,745 +1,1306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <title>Balol's Car Rental</title>
-    <link rel="icon" type="imag/x-icon" href="bin/logo.png">
-</head>
+    <link rel="icon" type="imag/x-icon" href="bin/logo.png" />
+  </head>
 
-
-<body>
+  <body>
     <!--header-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 text-center" id="phonenum">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                </svg>
-                <span>+63 9664169464, </span>
-                <span>+63 9517981903</span>
-            </div>
-            <div class="col-sm-6 text-center">
-                <marquee behavior="" direction="" >Balol's Car Rental, Driving Excellence in Mobility</marquee>
-            </div>
-
-            <div class="col-sm-3 text-center">
-                <a href="myaccount.html" type="button" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                  </svg></a>
-
-                <a href="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=ASKXGp1l1CBG3LoJhx-GwqJhw4e8irYRQO6PE4SFpeoA6KMdrv3htIGUrGnICR06KksOjkg4Sh9Qmg&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin" style="text-decoration: none; color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-                    </svg>
-                </a>
-                <a href="https://www.messenger.com/" style="text-decoration: none; color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
-                        <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
-                    </svg>
-                </a>
-                <a href="login.html" class="btn" data-bs-toggle="modal" data-bs-target="#loginmodal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
-                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-                      </svg>
-                </a>
-            </div>
-            <hr class="mt-1">
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-sm-3 text-center" id="header-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-telephone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            />
+          </svg>
+          <span>+63 9664169464, </span>
+          <span>+63 9517981903</span>
         </div>
+        <div class="col-sm-6 text-center">
+          <marquee behavior="" direction=""
+            >Balol's Car Rental, Driving Excellence in Mobility</marquee
+          >
+        </div>
+
+        <div class="col-sm-3 text-end" id="header-right">
+            <a href="#" class="btn" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasLogin">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </a>
+        </div>
+        <hr class="mt-1" />
+      </div>
     </div>
     <!--end header-->
 
     <!--brand-->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm text-center">
-                <a href="index.html" class="navbar-brand logo text-center" type="button"><img src="bin/logo.png" alt="this is a photo"></a>
-            </div>
+      <div class="row">
+        <div class="col-sm text-center">
+          <a
+            href="index.html"
+            class="navbar-brand logo text-center"
+            type="button"
+            ><img src="bin/logo.png" alt="this is a photo"
+          /></a>
         </div>
+      </div>
     </div>
     <!--end brand-->
 
     <!--navigation-->
     <div class="container-fluid mt-5 sticky-top navigation">
-        <div class="navbar navbar-expand-lg sticky-top">
+      <div class="navbar navbar-expand-lg sticky-top">
+        <button
+          class="navbar-toggler navbar-toggler-icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navDropdown"
+          aria-controls="visually-hidden"
+        ></button>
 
-            <button class="navbar-toggler navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navDropdown" aria-controls="visually-hidden"></button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navDropdown">
-                <ul class="navbar-nav">
-
-                    <div class="home">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link active text-success">Home</a>
-                        </li>
-                    </div>
-
-                    <div class="our-fleet">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="DropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Fleet</a>
-                            <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
-                                <li><a href="ourfleet.html" class="dropdown-item">All Cars</a></li>
-                                <li><a href="" class="dropdown-item">Family Service Vehicles</a></li>
-                                <li><a href="" class="dropdown-item">Bridal Cars</a></li>
-                                <li><a href="" class="dropdown-item">Moving Vehicles</a></li>
-                                <li><a href="" class="dropdown-item">Outing Vehicles</a></li>
-                                <li><a href="" class="dropdown-item">Small Family Service Vehicles</a></li>
-                                <li><a href="" class="dropdown-item">Motorcycle</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <div class="our-services">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Sevices</a>
-                            <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
-                                <li><a href="#" class="dropdown-item">Moving Items</a></li>
-                                <li><a href="#" class="dropdown-item">Field Trips</a></li>
-                                <li><a href="" class="dropdown-item">Family Service</a></li>
-                                <li><a href="#" class="dropdown-item">Outings</a></li>
-                                <li><a href="#" class="dropdown-item">Etc.</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Brand New Car Rental</a>
-                    </li>
-
-                    <div class="promo-offers">
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" id="DropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Promo Offers</a>
-                            <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
-                                <li><a href="" class="dropdown-item">New Years Special</a></li>
-                                <li><a href="" class="dropdown-item">Feb-Ibig Offers</a></li>
-                                <li><a href="" class="dropdown-item">Christmas Deals</a></li>
-                            </ul>
-                        </li>
-                    </div>
-
-                    <li class="nav-item">
-                        <a href="" class="nav-link">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Reviews</a>
-                    </li>
-                </ul>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navDropdown"
+        >
+          <ul class="navbar-nav">
+            <div class="home">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active text-success"
+                  >Home</a
+                >
+              </li>
             </div>
+
+            <div class="our-fleet">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="DropdownMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Our Fleet</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
+                  <li>
+                    <a href="ourfleet.html" class="dropdown-item">All Cars</a>
+                  </li>
+                  <li>
+                    <a href="" class="dropdown-item">Family Service Vehicles</a>
+                  </li>
+                  <li><a href="" class="dropdown-item">Bridal Cars</a></li>
+                  <li><a href="" class="dropdown-item">Moving Vehicles</a></li>
+                  <li><a href="" class="dropdown-item">Outing Vehicles</a></li>
+                  <li>
+                    <a href="" class="dropdown-item"
+                      >Small Family Service Vehicles</a
+                    >
+                  </li>
+                  <li><a href="" class="dropdown-item">Motorcycle</a></li>
+                </ul>
+              </li>
+            </div>
+
+            <div class="our-services">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="DropdownMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Our Sevices</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
+                  <li><a href="#" class="dropdown-item">Moving Items</a></li>
+                  <li><a href="#" class="dropdown-item">Field Trips</a></li>
+                  <li><a href="" class="dropdown-item">Family Service</a></li>
+                  <li><a href="#" class="dropdown-item">Outings</a></li>
+                  <li><a href="#" class="dropdown-item">Etc.</a></li>
+                </ul>
+              </li>
+            </div>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Brand New Car Rental</a>
+            </li>
+
+            <div class="promo-offers">
+              <li class="nav-item dropdown">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  id="DropdownMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Promo Offers</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="DropdownMenu">
+                  <li>
+                    <a href="" class="dropdown-item">New Years Special</a>
+                  </li>
+                  <li><a href="" class="dropdown-item">Feb-Ibig Offers</a></li>
+                  <li><a href="" class="dropdown-item">Christmas Deals</a></li>
+                </ul>
+              </li>
+            </div>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Reviews</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
     <!--end navigation-->
-    <hr>
+    <hr />
 
     <!--main body-->
     <div class="container-fluid">
-        <!--video-->
-        <div class="container-fluid">
+      <!--video-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm text-center">
+            <div class="balols">
+              <h1>Balol's</h1>
+              <p>
+                Welcome to Balols Car Rental, where your journey begins with
+                convenience and reliability. Whether you're planning a weekend
+                getaway or a business trip, our diverse fleet offers a range of
+                top-quality vehicles to suit your needs. From compact cars for
+                urban exploration to spacious SUVs for family adventures, we've
+                got you covered. With easy online booking and flexible rental
+                options, we aim to make your experience seamless and
+                stress-free. Trust Balols Car Rental for a smooth and enjoyable
+                ride from start to finish.
+              </p>
+            </div>
+            <video src="bin/vios.mp4" muted autoplay loop></video>
+          </div>
+        </div>
+      </div>
+      <!--end video-->
+
+      <!--book now button-->
+      <div class="container-fluid">
+        <div class="row mt-2">
+          <div class="col-sm text-center">
+            <a href="https://calendly.com/balols" type="button" class="btn btn-success text-center"
+              >Book Now!</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--end book now button-->
+
+      <!--intro-->
+      <div class="container-fluid">
+        <div class="row mt-5 fs-5 text-center">
+          <div class="col-sm">
+            <p>
+              Balols Car Rental is your premier destination for hassle-free and
+              reliable car rental services. Whether you're a local resident in
+              need of a temporary vehicle or a traveler exploring a new city,
+              Balols Car Rental has a diverse fleet to cater to your
+              transportation needs. Our commitment to customer satisfaction is
+              reflected in our well-maintained and modern vehicles, ensuring a
+              comfortable and enjoyable driving experience
+            </p>
+            <p>
+              We prioritize convenience and flexibility, offering a range of
+              rental options, including daily, weekly, and monthly plans. Our
+              user-friendly booking process and competitive rates make renting a
+              car with us a seamless and cost-effective choice. We take pride in
+              delivering exceptional customer service, and our team is dedicated
+              to assisting you throughout the rental process.
+            </p>
+            <p>
+              With Balols Car Rental, you can explore your destination at your
+              own pace, enjoying the freedom to go wherever your journey takes
+              you. Trust us to provide a reliable and efficient rental solution,
+              allowing you to focus on making the most of your travel or daily
+              activities. Choose Balols Car Rental for a stress-free and
+              enjoyable driving experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--end intro-->
+
+      <!--extras-->
+      <div class="container{breakpoint}">
+        <div class="row mt-5 extras text-center">
+          <div class="col-sm">
+            <div class="card">
+              <center>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="white"
+                  class="bi bi-gem"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"
+                  />
+                </svg>
+              </center>
+              <h3>VIP Services</h3>
+              <p>
+                Indulge in the epitome of luxury with Balols Car Rental's VIP
+                service. Our VIP offering goes beyond traditional car rental,
+                providing discerning clients with an exclusive and personalized
+                experience. From high-end, meticulously maintained vehicles to
+                dedicated concierge services, we ensure that every detail
+                exceeds your expectations.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <center>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="white"
+                  class="bi bi-table"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 2h-4v3h4zm0 4h-4v3h4zm0 4h-4v3h3a1 1 0 0 0 1-1zm-5 3v-3H6v3zm-5 0v-3H1v2a1 1 0 0 0 1 1zm-4-4h4V8H1zm0-4h4V4H1zm5-3v3h4V4zm4 4H6v3h4z"
+                  />
+                </svg>
+              </center>
+              <h3>All-Inclusive Rates</h3>
+              <p>
+                We offer all inclusive rates with fuel, toll and parking fees
+                for our VIP's. Our Drivers will never ask any payment to our
+                valued customers.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <center>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="white"
+                  class="bi bi-house-gear-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708z"
+                  />
+                  <path
+                    d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z"
+                  />
+                  <path
+                    d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                  />
+                </svg>
+              </center>
+              <h3>Since 2024</h3>
+              <p>
+                Balol's car rental recently started last January 01, 2024 and
+                still operating up to this date. With over 200+ bookings and 50
+                different types of cars, vans and motorcycles.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <center>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="white"
+                  class="bi bi-hand-thumbs-up-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"
+                  />
+                </svg>
+              </center>
+              <h3>Top Drivers</h3>
+              <p>
+                Our services meets local standards, quality well groomed
+                bilingual speaking drivers, pact with knowledge in onboard
+                geolocation apps.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row extras">
+          <div class="col-sm text-center">
+            <a href="#why" class="btn btn-light">Learn more!</a>
+          </div>
+        </div>
+      </div>
+      <!--end extras-->
+
+      <!--featured-->
+      <div class="container-fluid">
+        <div class="row mt-5 mb-5 featured">
+          <div class="row">
+            <div class="col-sm text-end">
+              <h2>Featured Cars For Rent</h2>
+            </div>
+            <div class="col-sm">
+              <hr />
+            </div>
+          </div>
+          <div class="col-sm">
             <div class="row">
-                <div class="col-sm text-center">
-                    <div class="balols ">
-                        <h1>Balol's</h1>
-                        <p>Welcome to Balols Car Rental, where your journey begins with convenience and reliability. Whether you're planning a weekend getaway or a business trip, our diverse fleet offers a range of top-quality vehicles to suit your needs. From compact cars for urban exploration to spacious SUVs for family adventures, we've got you covered. With easy online booking and flexible rental options, we aim to make your experience seamless and stress-free. Trust Balols Car Rental for a smooth and enjoyable ride from start to finish.</p>
-                    </div>
-                    <video src="bin/vios.mp4" muted autoplay loop></video>
+              <div class="col-sm my-2">
+                <div class="card p-2">
+                  <center>
+                    <img src="bin/hiace.jpg" alt="this is a photo" />
+                  </center>
+                  <div class="card-body">
+                    <h3>Toyota Hiace</h3>
+                    <ul>
+                      <li>From ₱1000 per hour</li>
+                      <li>2 captain seats</li>
+                      <li>9 passenger seats</li>
+                      <li>3 units available</li>
+                    </ul>
+                    <p>
+                      Embark on your group adventures with Balols Car Rental's
+                      Toyota Hiace. Our Hiace rentals offer spacious and
+                      comfortable transportation for your entire crew. With
+                      ample seating and versatile interior configurations, the
+                      Toyota Hiace ensures a smooth and enjoyable journey for
+                      family trips, corporate outings, or group excursions.
+                      Renting a Hiace from Balols is the key to stress-free
+                      travel, combining reliability with generous space to
+                      accommodate both passengers and luggage. Experience the
+                      convenience of a well-maintained and reliable Toyota
+                      Hiace, making your group travel memorable and comfortable.
+                      Choose Balols Car Rental for a seamless and spacious ride
+                      with the Toyota Hiace.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-success">
+                      More details
+                    </button>
+                  </div>
                 </div>
+              </div>
+              <div class="col-sm my-2">
+                <div class="card p-2">
+                  <center>
+                    <img src="bin/vios.jpg" alt="this is a photo" />
+                  </center>
+                  <div class="card-body">
+                    <h3>Toyota Vios</h3>
+                    <ul>
+                      <li>From ₱700 per hour</li>
+                      <li>2 captain seats</li>
+                      <li>2 passenger seats</li>
+                      <li>1 units available</li>
+                    </ul>
+                    <p>
+                      Navigate the city streets with ease and style by renting
+                      the Toyota Vios from Balols Car Rental. The Toyota Vios is
+                      the perfect companion for your urban adventures, offering
+                      a sleek and compact design without compromising on
+                      comfort. With its fuel efficiency and responsive handling,
+                      the Vios is an ideal choice for both short trips and
+                      longer journeys. Renting the Vios from Balols ensures a
+                      reliable and enjoyable driving experience, allowing you to
+                      effortlessly explore your destination. Make the most of
+                      your travel with the convenience and efficiency of the
+                      Toyota Vios from Balols Car Rental.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-success">
+                      More details
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <!--end video-->
-
-        <!--book now button-->
-        <div class="container-fluid">
-            <div class="row mt-2">
-                <div class="col-sm text-center">
-                    <a href="" type="button" class="btn btn-success text-center">Book Now!</a>
-                </div>
-            </div>
-        </div>
-        <!--end book now button-->
-
-        <!--intro-->
-        <div class="container-fluid">
-            <div class="row mt-5 fs-5 text-center">
-                <div class="col-sm">
-                    <p>Balols Car Rental is your premier destination for hassle-free and reliable car rental services. Whether you're a local resident in need of a temporary vehicle or a traveler exploring a new city, Balols Car Rental has a diverse fleet to cater to your transportation needs. Our commitment to customer satisfaction is reflected in our well-maintained and modern vehicles, ensuring a comfortable and enjoyable driving experience</p>
-                    <p>We prioritize convenience and flexibility, offering a range of rental options, including daily, weekly, and monthly plans. Our user-friendly booking process and competitive rates make renting a car with us a seamless and cost-effective choice. We take pride in delivering exceptional customer service, and our team is dedicated to assisting you throughout the rental process.</p>
-                    <p>With Balols Car Rental, you can explore your destination at your own pace, enjoying the freedom to go wherever your journey takes you. Trust us to provide a reliable and efficient rental solution, allowing you to focus on making the most of your travel or daily activities. Choose Balols Car Rental for a stress-free and enjoyable driving experience.</p>
-                </div>
-            </div>
-        </div>
-        <!--end intro-->
-
-        <!--extras-->
-        <div class="container{breakpoint}">
-            <div class="row mt-5 extras text-center">
-                <div class="col-sm">
-                    <div class="card">
-                        <center><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-gem" viewBox="0 0 16 16">
-                            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
-                          </svg></center>
-                        <h3>VIP Services</h3>
-                        <p>Indulge in the epitome of luxury with Balols Car Rental's VIP service. Our VIP offering goes beyond traditional car rental, providing discerning clients with an exclusive and personalized experience. From high-end, meticulously maintained vehicles to dedicated concierge services, we ensure that every detail exceeds your expectations. </p>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <center><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-table" viewBox="0 0 16 16">
-                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 2h-4v3h4zm0 4h-4v3h4zm0 4h-4v3h3a1 1 0 0 0 1-1zm-5 3v-3H6v3zm-5 0v-3H1v2a1 1 0 0 0 1 1zm-4-4h4V8H1zm0-4h4V4H1zm5-3v3h4V4zm4 4H6v3h4z"/>
-                          </svg></center>
-                        <h3>All-Inclusive Rates</h3>
-                        <p>We offer all inclusive rates with fuel, toll and parking fees for our VIP's. Our Drivers will never ask any payment to our valued customers.</p>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <center><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-house-gear-fill" viewBox="0 0 16 16">
-                            <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708z"/>
-                            <path d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z"/>
-                            <path d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-                          </svg></center>
-                        <h3>Since 2024</h3>
-                        <p>Balol's car rental recently started last January 01, 2024 and still operating up to this date. With over 200+ bookings and 50 different types of cars, vans and motorcycles.</p>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <center><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
-                            <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
-                          </svg></center>
-                        <h3>Top Drivers</h3>
-                        <p>Our services meets local standards, quality well groomed bilingual speaking drivers, pact with knowledge in onboard geolocation apps.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row extras">
-                <div class="col-sm text-center">
-                    <a href="#why" class="btn btn-light">Learn more!</a>
-                </div>
-            </div>
-        </div>
-        <!--end extras-->
-
-        <!--featured-->
-        <div class="container-fluid">
-            <div class="row mt-5 mb-5 featured">
-                <div class="row">
-                    <div class="col-sm text-end">
-                        <h2>Featured Cars For Rent</h2>
-                    </div>
-                    <div class="col-sm">
-                        <hr>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm my-2">
-                            <div class="card p-2">
-                                <center><img src="bin/hiace.jpg" alt="this is a photo"></center>
-                                <div class="card-body">
-                                    <h3>Toyota Hiace</h3>
-                                    <ul>
-                                        <li>From ₱1000 per hour</li>
-                                        <li>2 captain seats</li>
-                                        <li>9 passenger seats</li>
-                                        <li>3 units available</li>
-                                    </ul>
-                                    <p>Embark on your group adventures with Balols Car Rental's Toyota Hiace. Our Hiace rentals offer spacious and comfortable transportation for your entire crew. With ample seating and versatile interior configurations, the Toyota Hiace ensures a smooth and enjoyable journey for family trips, corporate outings, or group excursions. Renting a Hiace from Balols is the key to stress-free travel, combining reliability with generous space to accommodate both passengers and luggage. Experience the convenience of a well-maintained and reliable Toyota Hiace, making your group travel memorable and comfortable. Choose Balols Car Rental for a seamless and spacious ride with the Toyota Hiace.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <button type="button" class="btn btn-success">More details</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm my-2">
-                            <div class="card p-2">
-                                <center><img src="bin/vios.jpg" alt="this is a photo"></center>
-                                <div class="card-body">
-                                    <h3>Toyota Vios</h3>
-                                    <ul>
-                                        <li>From ₱700 per hour</li>
-                                        <li>2 captain seats</li>
-                                        <li>2 passenger seats</li>
-                                        <li>1 units available</li>
-                                    </ul>
-                                    <p>Navigate the city streets with ease and style by renting the Toyota Vios from Balols Car Rental. The Toyota Vios is the perfect companion for your urban adventures, offering a sleek and compact design without compromising on comfort. With its fuel efficiency and responsive handling, the Vios is an ideal choice for both short trips and longer journeys. Renting the Vios from Balols ensures a reliable and enjoyable driving experience, allowing you to effortlessly explore your destination. Make the most of your travel with the convenience and efficiency of the Toyota Vios from Balols Car Rental.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <button type="button" class="btn btn-success">More details</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm my-2">
-                            <div class="card p-2">
-                                <center><img src="bin/aerox.jpg" alt="this is a photo"></center>
-                                <div class="card-body">
-                                    <h3>Yamaha Aerox</h3>
-                                    <ul>
-                                        <li>From ₱350 per hour</li>
-                                        <li>1 captain seats</li>
-                                        <li>1 passenger seats</li>
-                                        <li>2 units available</li>
-                                    </ul>
-                                    <p>Experience the thrill of the open road with Balols Car Rental's Yamaha Aerox rental. Our Yamaha Aerox scooters combine sleek design with powerful performance, offering a dynamic and stylish way to navigate the city. Whether you're zipping through traffic or cruising along scenic routes, the Yamaha Aerox delivers a smooth and exhilarating ride. Renting the Aerox from Balols is a hassle-free experience, providing you with the freedom to explore your destination with agility and style. Embrace the excitement of two-wheel travel and make your rental choice the Yamaha Aerox for a ride that's as efficient as it is thrilling.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <button type="button" class="btn btn-success">More details</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm my-2">
-                            <div class="card p-2">
-                                <center><img src="bin/raider.jpg" alt="this is a photo"></center>
-                                <div class="card-body">
-                                    <h3>Suzuki Raider</h3>
-                                    <ul>
-                                        <li>From ₱350 per hour</li>
-                                        <li>1 captain seats</li>
-                                        <li>1 passenger seats</li>
-                                        <li>1 units available</li>
-                                    </ul>
-                                    <p>Embark on thrilling rides and explore the roads with Balols Car Rental's Yamaha Raider rental. The Yamaha Raider is the ultimate choice for those seeking a powerful and stylish motorcycle adventure. With its bold design and high-performance features, the Raider offers an exhilarating experience on two wheels. Renting the Yamaha Raider from Balols is your ticket to an unforgettable ride, where speed meets style. Feel the freedom of the open road and make your journey extraordinary with the Yamaha Raider from Balols Car Rental.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <button type="button" class="btn btn-success">More details</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-            </div>
-        </div>
-        <!--end featured-->
-
-        <!--see all button-->
-        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm text-center">
-                    <button type="button" class="btn btn-success">See All Cars</button>
+              <div class="col-sm my-2">
+                <div class="card p-2">
+                  <center>
+                    <img src="bin/aerox.jpg" alt="this is a photo" />
+                  </center>
+                  <div class="card-body">
+                    <h3>Yamaha Aerox</h3>
+                    <ul>
+                      <li>From ₱350 per hour</li>
+                      <li>1 captain seats</li>
+                      <li>1 passenger seats</li>
+                      <li>2 units available</li>
+                    </ul>
+                    <p>
+                      Experience the thrill of the open road with Balols Car
+                      Rental's Yamaha Aerox rental. Our Yamaha Aerox scooters
+                      combine sleek design with powerful performance, offering a
+                      dynamic and stylish way to navigate the city. Whether
+                      you're zipping through traffic or cruising along scenic
+                      routes, the Yamaha Aerox delivers a smooth and
+                      exhilarating ride. Renting the Aerox from Balols is a
+                      hassle-free experience, providing you with the freedom to
+                      explore your destination with agility and style. Embrace
+                      the excitement of two-wheel travel and make your rental
+                      choice the Yamaha Aerox for a ride that's as efficient as
+                      it is thrilling.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-success">
+                      More details
+                    </button>
+                  </div>
                 </div>
+              </div>
+              <div class="col-sm my-2">
+                <div class="card p-2">
+                  <center>
+                    <img src="bin/raider.jpg" alt="this is a photo" />
+                  </center>
+                  <div class="card-body">
+                    <h3>Suzuki Raider</h3>
+                    <ul>
+                      <li>From ₱350 per hour</li>
+                      <li>1 captain seats</li>
+                      <li>1 passenger seats</li>
+                      <li>1 units available</li>
+                    </ul>
+                    <p>
+                      Embark on thrilling rides and explore the roads with
+                      Balols Car Rental's Yamaha Raider rental. The Yamaha
+                      Raider is the ultimate choice for those seeking a powerful
+                      and stylish motorcycle adventure. With its bold design and
+                      high-performance features, the Raider offers an
+                      exhilarating experience on two wheels. Renting the Yamaha
+                      Raider from Balols is your ticket to an unforgettable
+                      ride, where speed meets style. Feel the freedom of the
+                      open road and make your journey extraordinary with the
+                      Yamaha Raider from Balols Car Rental.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-success">
+                      More details
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!--end see all button-->
-        
-        <!--latest news-->
-        <div class="container-fluid">
-            <div class="row mt-5 fb-page">
+      </div>
+      <!--end featured-->
+
+      <!--see all button-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm text-center">
+            <button type="button" class="btn btn-success">See All Cars</button>
+          </div>
+        </div>
+      </div>
+      <!--end see all button-->
+
+      <!--latest news-->
+      <div class="container-fluid">
+        <div class="row mt-5 fb-page">
+          <div class="row">
+            <div class="col-sm">
+              <hr />
+            </div>
+            <div class="col-sm">
+              <h2>Balol's Latest News</h2>
+            </div>
+          </div>
+          <div class="col-sm">
+            <p>
+              "Hot off the Press: Balols Car Rental Redefines Mobility! 🚗✨
+              Exciting news from Balols Car Rental as they introduce a
+              cutting-edge fleet upgrade, blending style and sustainability. Get
+              ready for an unparalleled driving experience with the latest
+              additions to their lineup. From sleek electric vehicles to luxury
+              rides, Balols is steering towards a greener, more sophisticated
+              future. Buckle up for innovation – Balols Car Rental is driving
+              you into a new era of mobility!"
+            </p>
+          </div>
+          <img src="bin/latest.jpg" alt="this is a photo" />
+        </div>
+      </div>
+      <!--end latest news-->
+
+      <!--what to rent-->
+      <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="row">
+            <div class="col-sm text-end">
+              <h2>What to Rents</h2>
+            </div>
+            <div class="col-sm">
+              <hr />
+            </div>
+          </div>
+          <p>
+            Whether you're planning a weekend getaway, a family vacation, or
+            just need reliable transportation, Balols Car Rental has the perfect
+            vehicle for you. Our diverse fleet includes stylish sedans, spacious
+            SUVs, versatile vans, and even thrilling motorcycles, catering to
+            all your travel needs. Explore the city streets, embark on a road
+            trip, or make a grand entrance at your special event with our
+            premium rental options. At Balols, we offer the freedom to choose
+            the perfect vehicle that suits your style and purpose. Rent with us
+            for a seamless and enjoyable journey, where the right vehicle
+            enhances every moment of your travel experience.
+          </p>
+        </div>
+      </div>
+      <!--end of what to rent-->
+
+      <!--what to rent cards-->
+      <div class="container-fluid">
+        <div class="row whatfor">
+          <div class="col-sm m-2">
+            <div class="card p-2">
+              <img src="bin/bridalphoto.jpg" alt="this is a photo" />
+              <div class="card-body">
+                <h3>Bridal Cars</h3>
+                <p>
+                  Make your special day even more memorable with Balols Car
+                  Rental's exquisite fleet of bridal cars. Our collection
+                  features elegant and luxurious vehicles that add a touch of
+                  sophistication to your wedding day. From classic to modern,
+                  our bridal cars are meticulously maintained and
+                  chauffeur-driven, ensuring a seamless and stylish entrance to
+                  your celebration. Trust Balols Car Rental to provide the
+                  perfect ride for your wedding, creating timeless moments as
+                  you embark on a journey of love. Elevate your wedding
+                  experience with our exclusive bridal car service, where every
+                  detail is designed to complement the elegance of your special
+                  day.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-success">See more!</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm m-2">
+            <div class="card p-2">
+              <img src="bin/lbt.jpg" alt="this is a photo" />
+              <div class="card-body">
+                <h3>For Moving Vehicles</h3>
+                <p>
+                  Simplify your move with Balols Car Rental's reliable moving
+                  vehicles. Our fleet of spacious and well-equipped trucks are
+                  designed to make transporting your items a breeze. From small
+                  moves to larger cargo requirements, our moving vehicles
+                  provide the flexibility and convenience you need. Trust Balols
+                  for a stress-free moving experience, where our reliable
+                  vehicles and straightforward rental process ensure that your
+                  belongings reach their destination safely. Choose Balols Car
+                  Rental for efficient and affordable moving solutions tailored
+                  to your needs, because moving should be as smooth as possible.
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-success">See more!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <div class="row whatfor">
+          <div class="col-sm m-2">
+            <div class="card p-2">
+              <img src="bin/motorcycles.jpg" alt="this is a photo" />
+              <div class="card-body">
+                <h3>Motorcycles</h3>
+                <p>
+                  Rev Up Your Excitement! 🏍️ Balols Unleashes Thrilling
+                  Motorcycle Lineup! 🌟 Get ready to hit the road with style and
+                  power as Balols introduces its latest collection of
+                  cutting-edge motorcycles. From sleek urban rides to rugged
+                  adventure bikes, there's a two-wheeled thrill for every rider.
+                  Experience the freedom of the open road with Balols' precision
+                  engineering and bold designs. Whether you're a seasoned rider
+                  or a newcomer, these motorcycles are set to redefine your
+                  journey. Stay tuned for the ride of a lifetime with Balols!
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-success">See more!</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm"></div>
+        </div>
+      </div>
+      <!--end what to rent card-->
+
+      <!--why balols-->
+      <div class="container-fluid">
+        <div class="row mt-5 why-balols">
+          <div class="row mb-5">
+            <div class="col-sm text-end">
+              <h2 id="why">Why Choosing Balol's</h2>
+            </div>
+            <div class="col-sm">
+              <hr />
+            </div>
+          </div>
+          <!---->
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="card">
+                <div class="card-body">
+                  <h3>VIP SERVICES</h3>
+                  <div class="row m-4">
+                    <div class="col-sm">
+                      <img src="bin/vip.jpg" alt="this is a photo" />
+                    </div>
+                    <div class="col-sm">
+                      <p>
+                        Indulge in Luxury: Introducing Balols VIP Services! 🌟
+                        Elevate your experience with our exclusive VIP services,
+                        where luxury meets unparalleled sophistication. From
+                        personalized concierge assistance to VIP event access,
+                        Balols sets the standard for tailored excellence.
+                        Immerse yourself in a world of opulence and privilege.
+                        Elevate every moment with Balols VIP – because you
+                        deserve the extraordinary.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm"></div>
+          </div>
+          <!---->
+
+          <!---->
+          <div class="row mt-3">
+            <div class="col-sm"></div>
+            <div class="col-sm-10">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="text-end">ALL INCLUSIVE RATES</h3>
+                  <div class="row m-4">
+                    <div class="col-sm">
+                      <p>
+                        Discover the epitome of hassle-free luxury with Balols
+                        All-Inclusive Rates. We believe in providing our guests
+                        with a seamless and immersive experience, where every
+                        aspect of your stay is thoughtfully covered. From the
+                        moment you arrive, relish in the convenience of
+                        inclusive accommodations, gourmet dining experiences,
+                        and a myriad of exclusive amenities. Our transparent
+                        pricing ensures that you can fully indulge in the
+                        opulence of your surroundings without the worry of
+                        additional charges, allowing you to focus on creating
+                        lasting memories.
+                      </p>
+                      <p>
+                        At Balols, we go beyond traditional hospitality,
+                        offering a curated selection of activities and services,
+                        all included in our comprehensive rates. Whether you're
+                        looking to unwind in our spa, embark on exciting
+                        excursions, or simply savor delectable cuisine, our
+                        All-Inclusive Rates provide an unparalleled level of
+                        convenience and luxury, promising an unforgettable stay
+                        where every detail is taken care of, leaving you free to
+                        embrace the true essence of relaxation and enjoyment.
+                      </p>
+                    </div>
+                    <div class="col-sm">
+                      <img src="bin/inclusive.jpg" alt="this is a photo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+
+          <!---->
+          <div class="row mt-3">
+            <div class="col-sm-10">
+              <div class="card">
+                <div class="card-body">
+                  <h3>BALOL'S</h3>
+                  <div class="row m-4">
+                    <div class="col-sm">
+                      <img src="bin/logo.png" alt="this is a photo" />
+                    </div>
+                    <div class="col-sm">
+                      <p>
+                        Since the dawn of 2024 on January 1, Balols has
+                        continued its unwavering commitment to innovation and
+                        excellence. Over the past year, the company has
+                        propelled itself into new heights, unveiling
+                        cutting-edge products and services that have captivated
+                        the market. From groundbreaking tech advancements to
+                        revolutionary updates in its various divisions, Balols
+                        has proven itself to be a frontrunner in the
+                        ever-evolving landscape of technology and luxury
+                        services.
+                      </p>
+                      <p>
+                        Balols' dedication to customer satisfaction remains a
+                        cornerstone of its success. With a focus on
+                        personalization and attention to detail, the company has
+                        consistently delivered unparalleled experiences to its
+                        clientele. Whether through the introduction of
+                        state-of-the-art technologies or the expansion of its
+                        exclusive offerings, Balols continues to shape the
+                        future, solidifying its position as a trailblazer in the
+                        realms of technology, luxury, and unparalleled customer
+                        service. As we move forward into the future,
+                        anticipation grows for what Balols will unveil next, as
+                        it consistently pushes the boundaries of what is
+                        possible in the world of innovation and refinement.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm"></div>
+          </div>
+          <!---->
+
+          <!---->
+          <div class="row mt-3">
+            <div class="col-sm"></div>
+            <div class="col-sm-10">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="text-end">DRIVERS</h3>
+                  <div class="row m-4">
+                    <div class="col-sm">
+                      <p>
+                        Behind the wheel, drivers are the unsung heroes of our
+                        modern world, navigating the roads with skill,
+                        precision, and a sense of responsibility. In every
+                        commute or long-haul journey, drivers embody the essence
+                        of reliability and adaptability, smoothly overcoming
+                        challenges and ensuring the seamless flow of our daily
+                        lives. Their expertise is not just in maneuvering
+                        vehicles but also in fostering a sense of safety and
+                        trust among passengers, creating a vital link in the
+                        interconnected web of transportation.
+                      </p>
+                      <p>
+                        The dedication and professionalism of drivers extend
+                        beyond the tangible road. They play a pivotal role in
+                        shaping the overall experience of travel, contributing
+                        to the comfort and well-being of those they transport.
+                        From taxi drivers to chauffeurs, truck drivers to
+                        delivery specialists, their commitment to their craft
+                        fuels the wheels of progress, allowing societies to
+                        thrive and businesses to flourish. As we appreciate the
+                        convenience and efficiency they bring to our lives,
+                        let's also acknowledge the integral role drivers play in
+                        connecting communities and propelling us forward, making
+                        them indispensable contributors to the rhythm of our
+                        daily existence.
+                      </p>
+                    </div>
+                    <div class="col-sm">
+                      <img
+                        src="bin/drivers-presentable-appearance.jpg"
+                        alt="this is a photo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+        </div>
+      </div>
+      <!--end why balols-->
+
+      <!--faq-->
+      <div class="container-fluid faq">
+        <div class="row m-5">
+          <div class="col-sm text-end">
+            <h2>FAQ</h2>
+          </div>
+          <div class="col-sm-9">
+            <hr />
+          </div>
+        </div>
+        <center>
+          <div class="row">
+            <div class="col-sm">
+              <button
+                class="btn btn-light form-control text-start"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#FAQcollapse"
+                aria-expanded="false"
+                aria-controls="FAQcollapse"
+              >
                 <div class="row">
-                    <div class="col-sm">
-                        <hr>
-                    </div>
-                    <div class="col-sm">
-                        <h2>Balol's Latest News</h2>
-                    </div>
+                  <div class="col-sm">HOW MUCH TO RENT IN BALOL'S?</div>
+                  <div class="col-sm text-end">
+                    <i class="bi bi-arrow-down-square-fill text-end"></i>
+                  </div>
                 </div>
-                <div class="col-sm">
-                    <p>"Hot off the Press: Balols Car Rental Redefines Mobility! 🚗✨ Exciting news from Balols Car Rental as they introduce a cutting-edge fleet upgrade, blending style and sustainability. Get ready for an unparalleled driving experience with the latest additions to their lineup. From sleek electric vehicles to luxury rides, Balols is steering towards a greener, more sophisticated future. Buckle up for innovation – Balols Car Rental is driving you into a new era of mobility!"</p>
-                </div>
-                <img src="bin/latest.jpg" alt="this is a photo">
-            </div>
-        </div>
-        <!--end latest news-->
+              </button>
 
-        <!--what to rent-->
-        <div class="container-fluid">
-            <div class="row mt-5">
+              <div class="collapse mt-1 faqtext" id="FAQcollapse">
+                <div class="card card-body">
+                  <p>
+                    Embark on an Affordable Adventure with Balols! 🚗✨ Rent
+                    your ideal vehicle for as low as 1000-300 pesos, depending
+                    on your choice! Our diverse fleet ensures there's a perfect
+                    ride for every budget. Whether you fancy a compact car or a
+                    spacious SUV, Balols makes exploration accessible to
+                    everyone. Book your ride now and experience the joy of
+                    affordable, quality travel with Balols!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm">
+              <button
+                class="btn btn-light form-control text-start"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#FAQcollapse1"
+                aria-expanded="false"
+                aria-controls="FAQcollapse1"
+              >
                 <div class="row">
-                   <div class="col-sm text-end">
-                        <h2>What to Rents</h2>
-                   </div>
-                   <div class="col-sm">
-                        <hr>
-                   </div> 
+                  <div class="col-sm">DO YOU PROVIDE SELF DRIVE SERVICES?</div>
+                  <div class="col-sm text-end">
+                    <i class="bi bi-arrow-down-square-fill text-end"></i>
+                  </div>
                 </div>
-                <p>Whether you're planning a weekend getaway, a family vacation, or just need reliable transportation, Balols Car Rental has the perfect vehicle for you. Our diverse fleet includes stylish sedans, spacious SUVs, versatile vans, and even thrilling motorcycles, catering to all your travel needs. Explore the city streets, embark on a road trip, or make a grand entrance at your special event with our premium rental options. At Balols, we offer the freedom to choose the perfect vehicle that suits your style and purpose. Rent with us for a seamless and enjoyable journey, where the right vehicle enhances every moment of your travel experience.</p>         
-            </div>
-        </div>
-        <!--end of what to rent-->
+              </button>
 
-        <!--what to rent cards-->
-        <div class="container-fluid">
-            <div class="row whatfor">
-                <div class="col-sm m-2">
-                    <div class="card p-2">
-                        <img src="bin/bridalphoto.jpg" alt="this is a photo">
-                        <div class="card-body">
-                            <h3>Bridal Cars</h3>
-                            <p>Make your special day even more memorable with Balols Car Rental's exquisite fleet of bridal cars. Our collection features elegant and luxurious vehicles that add a touch of sophistication to your wedding day. From classic to modern, our bridal cars are meticulously maintained and chauffeur-driven, ensuring a seamless and stylish entrance to your celebration. Trust Balols Car Rental to provide the perfect ride for your wedding, creating timeless moments as you embark on a journey of love. Elevate your wedding experience with our exclusive bridal car service, where every detail is designed to complement the elegance of your special day.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-success">See more!</button>
-                        </div>
-                    </div>
+              <div class="collapse mt-1 faqtext" id="FAQcollapse1">
+                <div class="card card-body">
+                  <p>
+                    Take the Wheel with Balols Self-Drive Services! 🚗✨
+                    Experience the ultimate freedom of the road by renting a car
+                    and driving yourself to your destination. Balols offers a
+                    hassle-free self-drive experience with a diverse fleet of
+                    vehicles. From compact cars to spacious SUVs, choose your
+                    ride, hit the road, and make every journey uniquely yours.
+                    Drive your adventure with Balols – where the joy of
+                    exploration is in your hands!
+                  </p>
                 </div>
-                <div class="col-sm m-2">
-                    <div class="card p-2">
-                        <img src="bin/lbt.jpg" alt="this is a photo">
-                        <div class="card-body">
-                            <h3>For Moving Vehicles</h3>
-                            <p>Simplify your move with Balols Car Rental's reliable moving vehicles. Our fleet of spacious and well-equipped trucks are designed to make transporting your items a breeze. From small moves to larger cargo requirements, our moving vehicles provide the flexibility and convenience you need. Trust Balols for a stress-free moving experience, where our reliable vehicles and straightforward rental process ensure that your belongings reach their destination safely. Choose Balols Car Rental for efficient and affordable moving solutions tailored to your needs, because moving should be as smooth as possible.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-success">See more!</button>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!---->
-            <div class="row whatfor">
-                <div class="col-sm m-2">
-                    <div class="card p-2">
-                        <img src="bin/motorcycles.jpg" alt="this is a photo">
-                        <div class="card-body">
-                            <h3>Motorcycles</h3>
-                            <p>Rev Up Your Excitement! 🏍️ Balols Unleashes Thrilling Motorcycle Lineup! 🌟 Get ready to hit the road with style and power as Balols introduces its latest collection of cutting-edge motorcycles. From sleek urban rides to rugged adventure bikes, there's a two-wheeled thrill for every rider. Experience the freedom of the open road with Balols' precision engineering and bold designs. Whether you're a seasoned rider or a newcomer, these motorcycles are set to redefine your journey. Stay tuned for the ride of a lifetime with Balols!</p>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-success">See more!</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-    
-                </div>
-            </div>
-        </div>
-        <!--end what to rent card-->
-
-        <!--why balols-->
-        <div class="container-fluid">
-            <div class="row mt-5 why-balols">
-                <div class="row mb-5">
-                    <div class="col-sm text-end">
-                        <h2 id="why">Why Choosing Balol's</h2>
-                    </div>
-                    <div class="col-sm">
-                        <hr>
-                    </div>
-                </div>
-                <!---->
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm">
+              <button
+                class="btn btn-light form-control text-start"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#FAQcollapse2"
+                aria-expanded="false"
+                aria-controls="FAQcollapse2"
+              >
                 <div class="row">
-                    <div class="col-sm-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>VIP SERVICES</h3>
-                                <div class="row m-4">
-                                    <div class="col-sm">
-                                        <img src="bin/vip.jpg" alt="this is a photo">
-                                    </div>
-                                    <div class="col-sm">
-                                        <p>Indulge in Luxury: Introducing Balols VIP Services! 🌟 Elevate your experience with our exclusive VIP services, where luxury meets unparalleled sophistication. From personalized concierge assistance to VIP event access, Balols sets the standard for tailored excellence. Immerse yourself in a world of opulence and privilege. Elevate every moment with Balols VIP – because you deserve the extraordinary.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-    
-                    </div>
+                  <div class="col-sm">
+                    IS THE CARS IN GOOD QUALITY AND CONDITION?
+                  </div>
+                  <div class="col-sm text-end">
+                    <i class="bi bi-arrow-down-square-fill text-end"></i>
+                  </div>
                 </div>
-                <!---->
-    
-                <!---->
-                <div class="row mt-3">
-                    <div class="col-sm">
-    
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="text-end">ALL INCLUSIVE RATES</h3>
-                                <div class="row m-4">
-                                    <div class="col-sm">
-                                        <p>Discover the epitome of hassle-free luxury with Balols All-Inclusive Rates. We believe in providing our guests with a seamless and immersive experience, where every aspect of your stay is thoughtfully covered. From the moment you arrive, relish in the convenience of inclusive accommodations, gourmet dining experiences, and a myriad of exclusive amenities. Our transparent pricing ensures that you can fully indulge in the opulence of your surroundings without the worry of additional charges, allowing you to focus on creating lasting memories.</p>
-                                        <p>At Balols, we go beyond traditional hospitality, offering a curated selection of activities and services, all included in our comprehensive rates. Whether you're looking to unwind in our spa, embark on exciting excursions, or simply savor delectable cuisine, our All-Inclusive Rates provide an unparalleled level of convenience and luxury, promising an unforgettable stay where every detail is taken care of, leaving you free to embrace the true essence of relaxation and enjoyment.</p>                   
-                                    </div>
-                                    <div class="col-sm">
-                                        <img src="bin/inclusive.jpg" alt="this is a photo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---->
-    
-                <!---->
-                <div class="row mt-3">
-                    <div class="col-sm-10">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>BALOL'S</h3>
-                                <div class="row m-4">
-                                    <div class="col-sm">
-                                        <img src="bin/logo.png" alt="this is a photo">
-                                    </div>
-                                    <div class="col-sm">
-                                        <p>Since the dawn of 2024 on January 1, Balols has continued its unwavering commitment to innovation and excellence. Over the past year, the company has propelled itself into new heights, unveiling cutting-edge products and services that have captivated the market. From groundbreaking tech advancements to revolutionary updates in its various divisions, Balols has proven itself to be a frontrunner in the ever-evolving landscape of technology and luxury services.</p>
-                                    <p>
-                                        Balols' dedication to customer satisfaction remains a cornerstone of its success. With a focus on personalization and attention to detail, the company has consistently delivered unparalleled experiences to its clientele. Whether through the introduction of state-of-the-art technologies or the expansion of its exclusive offerings, Balols continues to shape the future, solidifying its position as a trailblazer in the realms of technology, luxury, and unparalleled customer service. As we move forward into the future, anticipation grows for what Balols will unveil next, as it consistently pushes the boundaries of what is possible in the world of innovation and refinement.
-                                    </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-    
-                    </div>
-                </div>
-                <!---->
-    
-                <!---->
-                <div class="row mt-3">
-                    <div class="col-sm">
-    
-                    </div>
-                    <div class="col-sm-10">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="text-end">DRIVERS</h3>
-                                <div class="row m-4">
-                                    <div class="col-sm">
-                                        <p>Behind the wheel, drivers are the unsung heroes of our modern world, navigating the roads with skill, precision, and a sense of responsibility. In every commute or long-haul journey, drivers embody the essence of reliability and adaptability, smoothly overcoming challenges and ensuring the seamless flow of our daily lives. Their expertise is not just in maneuvering vehicles but also in fostering a sense of safety and trust among passengers, creating a vital link in the interconnected web of transportation.</p>
-                                        <p>The dedication and professionalism of drivers extend beyond the tangible road. They play a pivotal role in shaping the overall experience of travel, contributing to the comfort and well-being of those they transport. From taxi drivers to chauffeurs, truck drivers to delivery specialists, their commitment to their craft fuels the wheels of progress, allowing societies to thrive and businesses to flourish. As we appreciate the convenience and efficiency they bring to our lives, let's also acknowledge the integral role drivers play in connecting communities and propelling us forward, making them indispensable contributors to the rhythm of our daily existence.</p>
-                                    </div>
-                                    <div class="col-sm">
-                                        <img src="bin/drivers-presentable-appearance.jpg" alt="this is a photo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---->
-            </div>
-        </div>
-        <!--end why balols-->
+              </button>
 
-        <!--faq-->     
-        <div class="container-fluid faq">
-            <div class="row m-5">
-                <div class="col-sm text-end">
-                    <h2>FAQ</h2>
+              <div class="collapse mt-1 faqtext" id="FAQcollapse2">
+                <div class="card card-body">
+                  Absolutely! At Balols, we prioritize your safety and
+                  satisfaction. Our vehicles undergo rigorous maintenance checks
+                  to ensure they are in top-notch condition. Drive with
+                  confidence, knowing that your journey is backed by quality and
+                  reliability. Your peace of mind is our priority at Balols –
+                  where every ride meets the highest standards of excellence.
                 </div>
-                <div class="col-sm-9">
-                    <hr>
-                </div>
+              </div>
             </div>
-            <center>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm">
+              <button
+                class="btn btn-light form-control text-start"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#FAQcollapse3"
+                aria-expanded="false"
+                aria-controls="FAQcollapse3"
+              >
                 <div class="row">
-                    <div class="col-sm">
-                        <button class="btn btn-light form-control text-start" type="button" data-bs-toggle="collapse" data-bs-target="#FAQcollapse" aria-expanded="false" aria-controls="FAQcollapse">
-                          <div class="row">
-                            <div class="col-sm">
-                                HOW MUCH TO RENT IN BALOL'S?
-                              </div>
-                              <div class="col-sm text-end">
-                                <i class="bi bi-arrow-down-square-fill text-end"></i>
-                              </div>
-                          </div>
-                        </button>
-    
-                      <div class="collapse mt-1 faqtext" id="FAQcollapse">
-                        <div class="card card-body">
-                            <p>Embark on an Affordable Adventure with Balols! 🚗✨ Rent your ideal vehicle for as low as 1000-300 pesos, depending on your choice! Our diverse fleet ensures there's a perfect ride for every budget. Whether you fancy a compact car or a spacious SUV, Balols makes exploration accessible to everyone. Book your ride now and experience the joy of affordable, quality travel with Balols!</p>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="col-sm">HOW TO BECOME A VIP MEMBER?</div>
+                  <div class="col-sm text-end">
+                    <i class="bi bi-arrow-down-square-fill text-end"></i>
+                  </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-sm">
-                        <button class="btn btn-light form-control text-start" type="button" data-bs-toggle="collapse" data-bs-target="#FAQcollapse1" aria-expanded="false" aria-controls="FAQcollapse1">
-                          <div class="row">
-                            <div class="col-sm">
-                                DO YOU PROVIDE SELF DRIVE SERVICES?
-                              </div>
-                              <div class="col-sm text-end">
-                                <i class="bi bi-arrow-down-square-fill text-end"></i>
-                              </div>
-                          </div>
-                        </button>
-    
-                      <div class="collapse mt-1 faqtext" id="FAQcollapse1">
-                        <div class="card card-body">
-                          <p>Take the Wheel with Balols Self-Drive Services! 🚗✨ Experience the ultimate freedom of the road by renting a car and driving yourself to your destination. Balols offers a hassle-free self-drive experience with a diverse fleet of vehicles. From compact cars to spacious SUVs, choose your ride, hit the road, and make every journey uniquely yours. Drive your adventure with Balols – where the joy of exploration is in your hands!</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-sm">
-                        <button class="btn btn-light form-control text-start" type="button" data-bs-toggle="collapse" data-bs-target="#FAQcollapse2" aria-expanded="false" aria-controls="FAQcollapse2">
-                          <div class="row">
-                            <div class="col-sm">
-                                IS THE CARS IN GOOD QUALITY AND CONDITION?
-                              </div>
-                              <div class="col-sm text-end">
-                                <i class="bi bi-arrow-down-square-fill text-end"></i>
-                              </div>
-                          </div>
-                        </button>
-    
-                      <div class="collapse mt-1 faqtext" id="FAQcollapse2">
-                        <div class="card card-body">
-                            Absolutely! At Balols, we prioritize your safety and satisfaction. Our vehicles undergo rigorous maintenance checks to ensure they are in top-notch condition. Drive with confidence, knowing that your journey is backed by quality and reliability. Your peace of mind is our priority at Balols – where every ride meets the highest standards of excellence.
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-sm">
-                        <button class="btn btn-light form-control text-start" type="button" data-bs-toggle="collapse" data-bs-target="#FAQcollapse3" aria-expanded="false" aria-controls="FAQcollapse3">
-                          <div class="row">
-                            <div class="col-sm">
-                                HOW TO BECOME A VIP MEMBER?
-                              </div>
-                              <div class="col-sm text-end">
-                                <i class="bi bi-arrow-down-square-fill text-end"></i>
-                              </div>
-                          </div>
-                        </button>
-    
-                      <div class="collapse mt-1 faqtext" id="FAQcollapse3">
-                        <div class="card card-body">
-                            <p>Elevate Your Experience: Becoming a Balols VIP Member is Easy!</p>
+              </button>
 
-                            <p>1. **Explore VIP Memberships:** Visit our website to discover the exclusive VIP membership options tailored to suit your preferences and lifestyle.</p>
-                            
-                            <p>2. **Choose Your Tier:** Select from our range of membership levels, each offering unique privileges and benefits designed to enhance your journey with Balols.</p>
-                            
-                            <p>3. **Submit Your Application:** Complete a quick and simple application form online <a href="">click here!</a>, providing us with a few details to ensure a personalized VIP experience.</p>
-                            
-                            <p>4. **Confirmation and Welcome:** Once approved, receive confirmation of your VIP status along with a warm welcome package detailing the premium benefits that await you.</p>
-                            
-                            <p>5. **Indulge in VIP Perks:** Congratulations! You're now a valued member of the Balols VIP community. Enjoy priority services, exclusive access, and personalized assistance as you embark on a new level of luxury.</p>
-                            
-                            <p>Join Balols VIP today – where your journey is not just a destination but an extraordinary experience tailored just for you!</p>
-                        </div>
-                      </div>
-                    </div>
+              <div class="collapse mt-1 faqtext" id="FAQcollapse3">
+                <div class="card card-body">
+                  <p>
+                    Elevate Your Experience: Becoming a Balols VIP Member is
+                    Easy!
+                  </p>
+
+                  <p>
+                    1. **Explore VIP Memberships:** Visit our website to
+                    discover the exclusive VIP membership options tailored to
+                    suit your preferences and lifestyle.
+                  </p>
+
+                  <p>
+                    2. **Choose Your Tier:** Select from our range of membership
+                    levels, each offering unique privileges and benefits
+                    designed to enhance your journey with Balols.
+                  </p>
+
+                  <p>
+                    3. **Submit Your Application:** Complete a quick and simple
+                    application form online <a href="">click here!</a>,
+                    providing us with a few details to ensure a personalized VIP
+                    experience.
+                  </p>
+
+                  <p>
+                    4. **Confirmation and Welcome:** Once approved, receive
+                    confirmation of your VIP status along with a warm welcome
+                    package detailing the premium benefits that await you.
+                  </p>
+
+                  <p>
+                    5. **Indulge in VIP Perks:** Congratulations! You're now a
+                    valued member of the Balols VIP community. Enjoy priority
+                    services, exclusive access, and personalized assistance as
+                    you embark on a new level of luxury.
+                  </p>
+
+                  <p>
+                    Join Balols VIP today – where your journey is not just a
+                    destination but an extraordinary experience tailored just
+                    for you!
+                  </p>
                 </div>
-            </center>
-        </div>
-        <!--end faq-->
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+      <!--end faq-->
     </div>
     <!--end main body-->
 
     <!--footer-->
     <div class="container-fluid footer mt-5">
-        <div class="row text-center footer-1">
-            <h3 class="mb-4 mt-3">CONTACT US!</h3>
-            <div class="col-sm">
-                <div class="card">
-                    <span><u>CONTACT INFO</u> <i class="bi bi-telephone-inbound"></i></span>
-                    <p>+63 9664169464</p>
-                    <p>+63 9517981903</p>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <span><u>EMAIL US!</u> <i class="bi bi-google"></i></span>
-                    <a href="https://mail.google.com/mail/u/0/">landolee1233@gmail.com</a>
-                    
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <span><u>OPENING HOURS</u> <i class="bi bi-door-open-fill"></i></span>
-                    <p>Balols Welcomes You! Our doors are open to serve you during our regular business hours. Join us from 8:00 AM to 10:00 PM every Monday to Friday and 10:00 AM to 6:00 Pm every Saturday to Sunday for an exceptional experience. Whether you're looking to explore our offerings, seek assistance, or simply indulge in our services, we're here to make every moment memorable. See you during our operating hours at Balols – where your satisfaction is our priority!</p>
-                </div>
-            </div>
+      <div class="row text-center footer-1">
+        <h3 class="mb-4 mt-3">CONTACT US!</h3>
+        <div class="col-sm">
+          <div class="card">
+            <span
+              ><u>CONTACT INFO</u> <i class="bi bi-telephone-inbound"></i
+            ></span>
+            <p>+63 9664169464</p>
+            <p>+63 9517981903</p>
+          </div>
         </div>
-        <div class="row footer-2">
-            <div class="col-sm-2 text-center">
-                <div class="card">
-                    <a href="index.html" class="footer-logo"><img src="bin/logo.png" alt="this is a photo"></a>
-                </div>
-            </div>
-            <div class="col-sm text-center">
-                <div class="card text-white">
-                    <h4>LOCATIONS:</h4>
-                    <ul>
-                        <li>PITOGO</li>
-                        <li>DIMATALING</li>
-                        <li>TABINA</li>
-                        <li>DINAS</li>
-                        <li>MATI</li>
-                        <li>SAN MIGUEL</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm text-center">
-                <div class="card">
-                    <h4 class="text-white">FOLLOW US!</h4>
-                    <ul>
-                        <li><a href="https://www.facebook.com/?_rdr"><i class="bi bi-facebook"></i> FACEBOOK</a></li>
-                        <li><a href="https://twitter.com/i/flow/login"><i class="bi bi-twitter-x"></i> TWITTER</a></li>
-                        <li><a href="https://www.instagram.com/accounts/login/"><i class="bi bi-instagram"></i> INSTAGRAM</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm text-center">
-                <div class="card text-white">
-                    <h4>OFFICIALS:</h4>
-                    <ul>
-                        <li>RODNIE DUMAGHAN</li>
-                        <li>ROEL GALBAN Jr.</li>
-                        <li>JOLINA MAE GALBAN</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-sm">
+          <div class="card">
+            <span><u>EMAIL US!</u> <i class="bi bi-google"></i></span>
+            <a href="https://mail.google.com/mail/u/0/"
+              >landolee1233@gmail.com</a
+            >
+          </div>
         </div>
-        <div class="row footer-3">
-            <div class="col-sm text-center">
-                <h5>&COPY;2024 BALOL'S CAR RENTAL ALL RIGHTS RESERVED.</h5>
-            </div>
+        <div class="col-sm">
+          <div class="card">
+            <span
+              ><u>OPENING HOURS</u> <i class="bi bi-door-open-fill"></i
+            ></span>
+            <p>
+              Balols Welcomes You! Our doors are open to serve you during our
+              regular business hours. Join us from 8:00 AM to 10:00 PM every
+              Monday to Friday and 10:00 AM to 6:00 Pm every Saturday to Sunday
+              for an exceptional experience. Whether you're looking to explore
+              our offerings, seek assistance, or simply indulge in our services,
+              we're here to make every moment memorable. See you during our
+              operating hours at Balols – where your satisfaction is our
+              priority!
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="row footer-2">
+        <div class="col-sm-2 text-center">
+          <div class="card">
+            <a href="index.html" class="footer-logo"
+              ><img src="bin/logo.png" alt="this is a photo"
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm text-center">
+          <div class="card text-white">
+            <h4>LOCATIONS:</h4>
+            <ul>
+              <li>PITOGO</li>
+              <li>DIMATALING</li>
+              <li>TABINA</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm text-center">
+          <div class="card">
+            <h4 class="text-white">FOLLOW US!</h4>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/?_rdr"
+                  ><i class="bi bi-facebook"></i> FACEBOOK</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/i/flow/login"
+                  ><i class="bi bi-twitter-x"></i> TWITTER</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/accounts/login/"
+                  ><i class="bi bi-instagram"></i> INSTAGRAM</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm text-center">
+          <div class="card text-white">
+            <h4>OFFICIALS:</h4>
+            <ul>
+              <li>RODNIE DUMAGHAN</li>
+              <li>ROEL GALBAN Jr.</li>
+              <li>JOLINA MAE GALBAN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-3">
+        <div class="col-sm text-center">
+          <h5>&COPY;2024 BALOL'S CAR RENTAL ALL RIGHTS RESERVED.</h5>
+        </div>
+      </div>
     </div>
     <!--end footer-->
 
-    <!--modal login-->
-        <div class="modal fade" id="loginmodal" tabindex="1" aria-labelledby="loginLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+    <!--offcanvas login-->
+    <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasLogin" aria-labelledby="offcanvasLoginLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">       
+            <center>
+                <img src="bin/logo.png" alt="this is a photo" style="height: 100px; width: 120px; border-radius: 10px;">
+                <h3>Login</h3> 
+            </center>
+            <form action="" method="post">
+                <input type="email" name="email" id="email" class="form-control" placeholder="@Email" required>
+                <input type="password" name="pass" id="pass" class="form-control mt-3" placeholder="Password" required>
+                <center><button type="submit" class="btn btn-success mt-3">Login</button></center>
+            </form>
+            <center class="mt-3">
+                <p>dont have account yet?</p>
+                <span>sign up <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#modalCreateAcc">here</a></span>
+            </center>
+        </div>
+    </div>
+    <!--end offcanvas login-->
+
+    <!--modal create account-->
+    <div class="modal fade" id="modalCreateAcc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="needs-validation" novalidate>
+                    <div class="row">
+                      <div class="col-sm">
+                        <label for="firstname" class="form-label">Firstname</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control" required>
+                      </div>
+                      <div class="col-sm">
+                        <label for="lastname" class="form-label">Lastname</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" required>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <center><img src="bin/logo.png" alt="this is a photo" style="width: 100px; height: 100px; border-radius: 10px;"></center>
-                        <div class="row mt-5">
-                            <div class="col-sm mx-5">
-                                <center><h4>Login</h4></center>
-                                <form action="" method="get" class="needs-validation">
-                                    <div class="emailadd">
-                                        <input type="email" name="email" id="email" placeholder="@Email" class="form-control" required>
-                                        <div class="invalid-tooltip">
-                                            invalid email
-                                        </div>
-                                    </div>
-                                    <div class="password mt-3">
-                                        <input type="password" name="pass" id="pass" placeholder="Password" class="form-control" required>
-                                        <div class="invalid-tooltip">
-                                            invalid password
-                                        </div>
-                                    </div>
-                                    <div class="sumbitbtn mt-3">
-                                        <center><button type="submit" class="btn btn-success">Login</button></center>
-                                    </div>
-                                </form>
-                            </div>
+                    <div class="row">
+                      <div class="col-sm">
+                        <label for="emailadd" class="form-label">Email</label>
+                        <input type="email" name="emailadd" id="emailadd" class="form-control" required placeholder="@">
+                      </div>
+                      <div class="col-sm-4">
+                        <label for="sex" class="form-label">Sex</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sex" id="male" value="option1" checked>
+                          <label class="form-check-label" for="male">
+                            Male
+                          </label>
                         </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sex" id="female" value="option2">
+                          <label class="form-check-label" for="female">
+                            Female
+                          </label>
+                        </div>
+                      </div>
                     </div>
+                    <div class="row">
+                      <div class="col-sm">
+                        <label for="municipality" class="form-label">Municipality</label>
+                        <select name="municipality" id="municipality" class="form-select" required>
+                          <option selected disabled>Municipality</option>
+                          <option value="">Dimataling</option>
+                          <option value="">Pitogo</option>
+                          <option value="">Tabina</option>
+                        </select>  
+                      </div>
+                      <div class="col-sm">
+                        <label for="barangay" class="form-label">Barangay</label>
+                        <select name="barangay" id="barangay" class="form-select" required>
+                          <option selected disabled aria-disabled="true">Barangay</option>
+                          <div class="brgydimataling">
+                            <option value="1">Kagawasan</option>
+                            <option value="2">Poblacion (Dimataling)</option>
+                          </div>
+                          <div class="brgypitogo">
+                            <option value="1">Poblacion (Pitogo)</option>
+                            <option value="2">Balabawan</option>
+                            <option value="3">Sugbay-Dos</option>
+                          </div>
+                          <div class="brgytabina">
+                            <option value="1">Poblacion (Tabina)</option>
+                            <option value="2">Abong-Abong</option>
+                            <option value="3">Baya-Baya</option>
+                          </div>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="cols-sm">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" name="address" id="address" class="form-control" placeholder="Street/House no." required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label for="validId" class="form-label">Present Drivers License and 1 additional Valid I.D.</label>
+                      <div class="col-sm">
+                        <label for="driversLicense" class="form-label">Drivers License:</label>
+                        <input type="file" name="driversLicense" id="driversLicense" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm">
+                        <label for="additionalValidID" class="form-label">Type of I.D.</label>
+                        <div class="input-group">
+                          <select name="addValidID" id="addValidID" class="form-select" required>
+                            <option selected disabled aria-disabled="true">.....</option>
+                            <option value="1">PhilHealth</option>
+                            <option value="2">Voters ID</option>
+                            <option value="3">Postal ID</option>
+                            <option value="4">National ID</option>
+                          </select>
+                          <input type="file" name="selectedAdditionalID" id="selectedAdditionalID" class="form-control" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label for="pass" class="form-label">Password</label>
+                      <div class="col-sm">
+                        <input type="password" name="pass" id="pass" class="form-control" placeholder="input password" required>
+                      </div>
+                      <div class="col-sm">
+                        <input type="password" name="pass" id="retypepass" class="form-control" placeholder="retype password" required>
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-sm">
+                        <div class="input-group">
+                          <input type="checkbox" name="agree" id="agree" class="form-check" required>
+                          <label for="agree" class="form-label p-2">Agree to Terms & Conditions</label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </form>
                 </div>
             </div>
         </div>
-    <!--end modal login-->
-</body>
+    </div>
+    <!--end modal create account-->
+
+
+  </body>
 </html>
